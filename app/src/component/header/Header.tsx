@@ -47,8 +47,7 @@ export default function Header() {
     router.push("/login");
   };
 
-  // Fungsi untuk mengambil inisial nama (Contoh: Adjie Surya -> AS)
-  const getInitials = (name: string | null) => {
+  const getInitials = (name: string | null | undefined) => {
     if (!name) return "U";
     return name
       .split(" ")
